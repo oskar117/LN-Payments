@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "paymentRequest": "789",
+      "paymentTopic": "35a9e381",
+      "price": 3,
+      "numberOfTokens": 4,
+      "paymentStatus": "CANCELLED",
+      "tokens": []
+    },
+    {
+      "paymentRequest": "456",
+      "paymentTopic": "b3a8e0e1",
+      "price": 2,
+      "numberOfTokens": 3,
+      "paymentStatus": "COMPLETE",
+      "tokens": []
+    },
+    {
+      "paymentRequest": "123",
+      "paymentTopic": "a665a459",
+      "price": 1,
+      "numberOfTokens": 1,
+      "paymentStatus": "PENDING",
+      "tokens": []
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "last": true,
+  "totalElements": 3,
+  "size": 20,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 3,
+  "first": true,
+  "empty": false
+}

@@ -1,13 +1,17 @@
 package pl.edu.pjatk.lnpayments.webservice.payment.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import pl.edu.pjatk.lnpayments.webservice.payment.exception.InconsistentDataException;
+import pl.edu.pjatk.lnpayments.webservice.common.exception.InconsistentDataException;
 import pl.edu.pjatk.lnpayments.webservice.payment.model.entity.Payment;
+import pl.edu.pjatk.lnpayments.webservice.payment.model.entity.PaymentStatus;
 import pl.edu.pjatk.lnpayments.webservice.payment.repository.PaymentRepository;
+import pl.edu.pjatk.lnpayments.webservice.payment.repository.enums.SearchableField;
+import pl.edu.pjatk.lnpayments.webservice.payment.repository.specification.PaymentSpecification;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.Collection;
 
 @Service
 public class PaymentDataService {
@@ -23,9 +27,8 @@ public class PaymentDataService {
         return paymentRepository.save(payment);
     }
 
-    public List<Payment> findPendingPaymentsByUser() {
-        //TODO implement, when we have a way to authenticate users
-        return Collections.emptyList();
+    public Collection<Payment> findPendingPaymentsByUser(String email) {
+        return paymentRepository.findPendingPaymentsByUserEmailAndStatus(email, PaymentStatus.PENDING);
     }
 
     public Payment findPaymentByRequest(String paymentRequest) {
@@ -33,4 +36,15 @@ public class PaymentDataService {
                 .orElseThrow(InconsistentDataException::new);
     }
 
+    public Page<Payment> findAll(SearchableField field, String value, Pageable pageable) {
+        return paymentRepository.findAll(new PaymentSpecification(field, value), pageable);
+    }
+
+    public Page<Payment> findAll(Pageable pageable) {
+        return paymentRepository.findAll(pageable);
+    }
+
+    public Collection<Payment> findAll() {
+        return paymentRepository.findAll();
+    }
 }

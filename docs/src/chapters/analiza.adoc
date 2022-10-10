@@ -1,0 +1,25 @@
+== Analiza
+
+include::../sections/use-cases.adoc[]
+
+include::../sections/stakeholders.adoc[]
+
+<<<
+
+include::../sections/functional_requirements.adoc[]
+
+include::../sections/architecture.adoc[]
+
+include::../sections/domain_model.adoc[]
+
+include::../sections/logic_model.adoc[]
+
+include::../sections/prototype.adoc[]
+
+include::../sections/mockup.adoc[]
+
+include::../sections/risk-analysis.adoc[]
+
+include::../sections/commercialization.adoc[]
+
+include::../sections/social_aspects.adoc[]

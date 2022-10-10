@@ -1,0 +1,38 @@
+{
+  "form": {
+    "title": "Server settings",
+    "success": "Settings have been saved",
+    "autoChannelCloseLimit": {
+      "label": "Channel close limit"
+    },
+    "autoTransferLimit": {
+      "label": "Auto transfer limit"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "invoiceMemo": {
+      "label": "Invoice memo"
+    },
+    "lastModification": {
+      "label": "Last modification"
+    },
+    "paymentExpiryInSeconds": {
+      "label": "Payment expiry"
+    },
+    "price": {
+      "label": "Price"
+    },
+    "tokenDeliveryUrl": {
+      "label": "Token delivery URL",
+      "question": "Do you want to send tokens to another service?"
+    },
+    "serverIpAddress": {
+      "label": "Server IP address",
+      "question": "Do you use custom server ip?"
+    },
+    "messages": {
+      "urlValidation": "Value should be either URL or IPv4 address."
+    }
+  }
+}

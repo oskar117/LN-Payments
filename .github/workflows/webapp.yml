@@ -5,7 +5,7 @@ name: React webapp CI
 
 on:
   push:
-    branches: [dev]
+    branches: [ dev ]
   pull_request:
     paths:
       - 'webapp/**'
@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'yarn'
@@ -32,6 +32,12 @@ jobs:
       - name: Eslint
         run: yarn lint
       - name: Tests
-        run: yarn test
+        run: yarn test:unit
       - name: Typescript and build
         run: yarn build
+      - name: Test report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: webapp-test-report
+          path: webapp/test-report.html

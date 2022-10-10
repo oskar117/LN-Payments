@@ -5,8 +5,10 @@
 @tailwind utilities;
 
 html,
-body {
+body,
+#root {
   height: 100%;
+  background-color: #f0f0fa;
 }
 
 html * {
@@ -14,9 +16,11 @@ html * {
 }
 
 .btn {
-  @apply font-bold py-3 px-5 rounded-xl bg-purple-400;
+  @apply font-bold py-3 rounded-xl bg-purple-400 text-center w-24;
 }
 
 .absolute-center {
   @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
 }
+
+

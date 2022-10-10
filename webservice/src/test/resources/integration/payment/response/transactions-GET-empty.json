@@ -1,0 +1,31 @@
+{
+  "pendingTransaction": null,
+  "transactions": {
+    "content": [],
+    "pageable": {
+      "sort": {
+        "empty": false,
+        "sorted": true,
+        "unsorted": false
+      },
+      "offset": 0,
+      "pageNumber": 0,
+      "pageSize": 20,
+      "paged": true,
+      "unpaged": false
+    },
+    "totalPages": 0,
+    "last": true,
+    "totalElements": 0,
+    "size": 20,
+    "number": 0,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "numberOfElements": 0,
+    "first": true,
+    "empty": true
+  }
+}

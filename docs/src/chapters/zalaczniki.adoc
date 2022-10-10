@@ -1,0 +1,21 @@
+:!sectnums:
+== Załączniki
+
+Wszystkie załączniki znajdują się na załączonym do pracy nośniku CD.
+
+* Główne repozytorium projektu zawierające:
+** Kod źródłowy serwera
+** Kod źródłowy aplikacji mobilnej
+** Kod źródłowy aplikacji internetowej
+** Kod źródłowy dokumentacji i książki do pracy dyplomowej
+* Repozytorium zawierające kod źródłowy prototypu
+* Dokumenty:
+** Dokument Założeń Wstępnych DZW
+** Karta Projektu KP
+** Specyfikacja Wymagań Systemowych SWS
+** Praca dyplomowa
+* Zbudowane pliki wykonywalne systemu
+* Plik zawierający linki do:
+** Repozytorium projektu w serwisie Github
+** Makiety interaktywnej w aplikacji internetowej Figma
+* Raporty z testów poszczególnych komponentów

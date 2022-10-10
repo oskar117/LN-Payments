@@ -8,6 +8,13 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
     }
   },
   "extends": [
@@ -16,7 +23,8 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "plugin:cypress/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -37,11 +45,36 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/no-custom-classname": "warn",
     "tailwindcss/no-contradicting-classname": "error",
-    "@typescript-eslint/no-empty-functions": "off"
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "../..*"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ]
   }
 }

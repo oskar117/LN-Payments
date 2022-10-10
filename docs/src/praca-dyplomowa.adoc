@@ -1,11 +1,45 @@
 = Praca Dyplomowa
 Aleksander Konieczny; Jan Pieczul; Sebastian Lewandowski
 :toc:
-:title-page:
+:showtitle!:
+:chapter-label:
+:imagesdir: images
 :sectnums:
+:doctype: book
+:toc-title: Spis treści
+:pdf-style: src/themes/book-theme.yml
+:figure-caption: Rysunek
+:table-caption: Tabela
+:listing-caption: Kod
+:source-highlighter: rouge
+:icons: font
 
-include::chapters/01-wstep.adoc[]
+include::chapters/wstep.adoc[]
 
-include::chapters/02-omowienie-problemu.adoc[]
+include::chapters/omowienie-problemu.adoc[]
+
+include::chapters/wizja-crypto.adoc[]
+
+include::chapters/analiza.adoc[]
+
+include::chapters/projekt.adoc[]
+
+include::chapters/plan.adoc[]
+
+include::chapters/proces-realizacji.adoc[]
+
+include::chapters/opis-rozwiazania.adoc[]
+
+include::chapters/prezentacja.adoc[]
+
+include::chapters/testy.adoc[]
+
+include::chapters/wklad-wlasny.adoc[]
+
+include::chapters/podsumowanie.adoc[]
 
 include::chapters/bibliografia.adoc[]
+
+include::chapters/slownik-pajec.adoc[]
+
+include::chapters/zalaczniki.adoc[]

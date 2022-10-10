@@ -4,14 +4,16 @@ import { useTranslation } from 'react-i18next'
 
 interface Props {
   confirmButtonContent?: string
+  cancelButtonContent?: string
   message: string
-  onConfirm: () => void
+  onConfirm?: () => void
   open: boolean
-  setOpen: (open: boolean) => void
+  setOpen: (open: false) => void
 }
 
 export const ConfirmationModal: React.FC<Props> = ({
   confirmButtonContent,
+  cancelButtonContent,
   message,
   onConfirm,
   open,
@@ -23,7 +25,7 @@ export const ConfirmationModal: React.FC<Props> = ({
 
   const confirmHandler = () => {
     hideModal()
-    onConfirm()
+    onConfirm?.()
   }
 
   return (
@@ -36,9 +38,19 @@ export const ConfirmationModal: React.FC<Props> = ({
       <Box className="p-7 bg-white rounded-xl absolute-center">
         <p className="mb-5">{message}</p>
         <div className="flex gap-5 justify-end">
+          {cancelButtonContent && (
+            <Button
+              color="warning"
+              variant="contained"
+              className="bg-purple-300"
+              onClick={() => hideModal()}
+            >
+              {cancelButtonContent}
+            </Button>
+          )}
           <Button
-            variant={'contained'}
-            color={'info'}
+            variant="contained"
+            className="bg-purple-300"
             onClick={() => confirmHandler()}
           >
             {confirmButtonContent || t('confirm')}

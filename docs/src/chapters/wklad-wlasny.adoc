@@ -1,0 +1,7 @@
+== Wkład własny
+
+include::../sections/own_contribution/aleksander.adoc[]
+
+include::../sections/own_contribution/jan.adoc[]
+
+include::../sections/own_contribution/sebastian.adoc[]

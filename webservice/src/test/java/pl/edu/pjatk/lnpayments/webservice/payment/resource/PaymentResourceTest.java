@@ -35,21 +35,13 @@ class PaymentResourceTest {
 
         @Test
         void shouldReturnStatusOkWhenProperDataPassed() {
-            PaymentDetailsRequest request = new PaymentDetailsRequest(1, "email");
+            PaymentDetailsRequest request = new PaymentDetailsRequest(1);
 
-            ResponseEntity<?> payment = paymentResource.createPayment(request);
-
-            assertThat(payment.getStatusCode()).isEqualTo(HttpStatus.OK);
-        }
-
-        @Test
-        void shouldReturnStatusOKWhenNoEmailSpecified() {
-            PaymentDetailsRequest request = new PaymentDetailsRequest(1, null);
-
-            ResponseEntity<?> payment = paymentResource.createPayment(request);
+            ResponseEntity<?> payment = paymentResource.createPayment(request, () -> null);
 
             assertThat(payment.getStatusCode()).isEqualTo(HttpStatus.OK);
         }
+
     }
 
     @Nested
@@ -57,9 +49,37 @@ class PaymentResourceTest {
 
         @Test
         void shouldReturnOkForAnyRequest() {
-            ResponseEntity<?> payment = paymentResource.paymentInfo();
+            ResponseEntity<?> payment = paymentResource.paymentInfo(() -> "test");
 
             assertThat(payment.getStatusCode()).isEqualTo(HttpStatus.OK);
+        }
+
+        @Test
+        void shouldReturnOkWhenPrincipalIsNull() {
+            ResponseEntity<?> payment = paymentResource.paymentInfo(null);
+
+            assertThat(payment.getStatusCode()).isEqualTo(HttpStatus.OK);
+        }
+    }
+
+    @Nested
+    class UserPaymentsTest {
+
+        @Test
+        void shouldReturnOkForValidRequest() {
+            ResponseEntity<?> payments = paymentResource.getAllUserPayments(() -> "test", null);
+
+            assertThat(payments.getStatusCode()).isEqualTo(HttpStatus.OK);
+        }
+    }
+
+    @Nested
+    class AllPaymentsTest {
+        @Test
+        void shouldReturnOkForValidRequest() {
+            ResponseEntity<?> payments = paymentResource.getAllPayments(null);
+
+            assertThat(payments.getStatusCode()).isEqualTo(HttpStatus.OK);
         }
     }
 }

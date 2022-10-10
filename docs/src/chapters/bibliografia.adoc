@@ -3,8 +3,62 @@
 
 * [[[btcbook, 1]]] _Andreas M. Antonopoulos_, Mastering Bitcoin: Programming the Open Blockchain, 2017,
 ISBN:{nbsp}978-1491954386
+
 * [[[lnbook, 2]]] _Andreas M. Antonopoulos, Olaoluwa Osuntokun, René Pickhardt_, Mastering the Lightning Network:
 A{nbsp}Second Layer Blockchain Protocol for Instant Bitcoin Payments, 2022,
 ISBN:{nbsp}978-1492054863
+
 * [[[lndguide, 3]]] _Lightning Labs_, Builder's Guide to the LND Galaxy, [dostęp: 02.02.2022],
 https://docs.lightning.engineering[]
+
+* [[[fee_chart, 4]]] _ycharts.com_, Bitcoin Average Transaction Fee, [dostęp: 08.05.2022],
+https://ycharts.com/indicators/bitcoin_average_transaction_fee[]
+
+* [[[public_ln, 5]]] _ACINQ_, Lightning Network Explorer, [dostęp: 08.05.2022],
+https://explorer.acinq.co[]
+
+* [[[gof, 6]]] _Erich Gamma, Richard Heml, Ralph Johnson, John Vlissides_, Design Patterns, 1995,
+ISBN:{nbsp}978-8328333130
+
+* [[[whitepaper, 7]]] _Satoshi Nakamoto_, Bitcoin: A Peer-to-Peer Electronic Cash System, [dostęp: 29.06.2022]
+https://bitcoin.org/bitcoin.pdf[]
+
+* [[[crypro_payment_raport, 8]]] _crypto.com_, Overview of Crypto Payment, [dostęp: 07.07.2022],
+https://t.ly/G-Zo[]
+
+* [[[crypto_market_sizing, 9]]] _crypto.com_, Crypto Market Sizing, [dostęp: 07.07.2022],
+https://t.ly/_-8M[]
+
+* [[[maven_directories, 10]]] _apache.maven.com_, Introduction to standard directory layout, [dostęp: 17.07.2022],
+https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html[]
+
+* [[[rest_tutorial_stateless, 11]]] _REST API Tutorial_, Stateless in REST API, [dostęp: 18.07.2022],
+https://restfulapi.net/statelessness[]
+
+* [[[hortsmann, 12]]] _Cay S. Horstmann_, Java. Podstawy. , 2019,
+ISBN:{nbsp}978-8328357785
+
+* [[[persistence_context, 13]]] _Baeldung_, JPA/Hibernate Persistence Context, [dostęp: 20.07.2022],
+https://www.baeldung.com/jpa-hibernate-persistence-context[]
+
+* [[[blockchain_size, 14]]] _ycharts.com_, Bitcoin Blockchain Size, [dostęp: 25.07.2022],
+https://ycharts.com/indicators/bitcoin_blockchain_size[]
+
+* [[[bip174, 15]]] _Andrew Chow_, BIP-174 - Partially Signed Bitcoin Transaction Format, [dostęp: 02.08.2022],
+https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki[]
+
+* [[[pragmatic_prog, 16]]] _David Thomas, Andrew Hunt_, Pragmatyczny programista, 1999,
+ISBN:{nbsp}978-83-283-7139-2
+
+* [[[scrum_guide, 17]]] _Ken Schwaber, Jeff Sutherland_, The Scrum Guide, 2020, [dostęp: 13.08.2022]
+https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf[]
+
+* [[[monorepo, 18]]] _GitHub, Inc. and contributors._, Maintaining a Monorepo, [dostęp: 16.08.2022]
+https://monorepo-book.github.io[]
+
+* [[[salvador, 19]]] _Business Insider_, Jako pierwszy kraj przyjęli bitcoina. Teraz grozi im
+niewypłacalność, [dostęp: 18.08.2022]
+https://businessinsider.com.pl/finanse/salwadorowi-grozi-niewyplacalnosc-przyjal-bitcoina-jako-pierwszy-kraj/4g61tj4[]
+
+* [[[podatki, 20]]] _podatki.gov.pl_, Rozliczenie ze sprzedaży kryptowalut, [dostęp: 18.08.2022]
+https://www.podatki.gov.pl/pit/rozliczenie-ze-sprzedazy-kryptowalut[]
